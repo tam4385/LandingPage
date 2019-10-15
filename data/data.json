@@ -1,0 +1,49 @@
+
+
+{ "data":
+    
+    
+    {"projects": [
+        
+        {"id": 0, "project_name": "Random Quote Generator", 
+            "description": "Generate random quotes at the click of a button",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": null,
+            "github_link": null,
+            "image_urls": ["../img/quotes_small.png",
+                 "/img/quotes_large1.png", null, null]},
+
+
+        {"id": 1, "project_name": "List Pagination",
+            "description": "Paginates a list of profiles into seperate pages",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": null,
+            "github_link":null,
+            "image_urls": [null, null, null, null]},
+        
+
+        {"id": 2, "project_name": "Form Validation",
+            "description": "Fictional conference form to demonstrate form validation",
+            "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
+            "live_link": null,
+            "github_link":null,
+            "image_urls": [null, null, null, null]},
+        
+
+        {"id": 3, "project_name": "Phrase Hunter",
+            "description": "Can you complete the phrase without losing all your lives?",
+            "technologies": ["HTML", "CSS", "JavaScript", "OOP JS"],
+            "live_link": null,
+            "github_link":null,
+            "image_urls": [null, null, null, null]},
+        
+            
+        {"id": 4, "project_name": "Employee Directory",
+            "description": "Fictional employee directory that generates random employees from a 3rd party API",
+            "technologies": ["HTML", "CSS", "JavaScript", "AJAX"],
+            "live_link": null,
+            "github_link":null,
+            "image_urls": [null]}
+    ]
+}
+}
