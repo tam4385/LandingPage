@@ -10,8 +10,8 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": null,
             "github_link": null,
-            "image_urls": ["../img/quotes_small.png",
-                 "/img/quotes_large1.png", null, null]},
+            "image_urls": ["/static/img/quotes_small.png",
+                 "/static/img/quotes_large1.png", "/static/img/quotes_large1.png", null]},
 
 
         {"id": 1, "project_name": "List Pagination",
@@ -19,7 +19,8 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": null,
             "github_link":null,
-            "image_urls": [null, null, null, null]},
+            "image_urls": ["/static/img/list_small.png", "/static/img/list_large1.png"
+                , "/static/img/list_large2.png", null]},
         
 
         {"id": 2, "project_name": "Form Validation",
@@ -27,7 +28,8 @@
             "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
             "live_link": null,
             "github_link":null,
-            "image_urls": [null, null, null, null]},
+            "image_urls": ["/static/img/form_small.png", "/static/img/form_large1.png",
+                "/static/img/form_large2.png", null, null]},
         
 
         {"id": 3, "project_name": "Phrase Hunter",
@@ -35,7 +37,8 @@
             "technologies": ["HTML", "CSS", "JavaScript", "OOP JS"],
             "live_link": null,
             "github_link":null,
-            "image_urls": [null, null, null, null]},
+            "image_urls": ["/static/img/phrase_small.png", "/static/img/phrase_large1.png",
+                 "/static/img/phrase_large2.png", null]},
         
             
         {"id": 4, "project_name": "Employee Directory",
@@ -43,7 +46,8 @@
             "technologies": ["HTML", "CSS", "JavaScript", "AJAX"],
             "live_link": null,
             "github_link":null,
-            "image_urls": [null]}
+            "image_urls": ["/static/img/start_small.png", "/static/img/start_large1.png",
+                "/static/img/start_large2.png"]}
     ]
 }
 }

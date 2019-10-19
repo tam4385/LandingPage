@@ -5,11 +5,11 @@ block content
     div
 
       //- Add a title or heading like My Portfolio, or Hey, Potential Employers, or Let's make the web great together! 
-      h1 More than a Developer
+      h1 More than just a Developer
 
       //- Add a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
       p.lead.text-light
-        | Portfolio Description
+        | Congratulations. You have just stumbled upon Thomas McVay's coding project portfolio.
   article.grid-container.portfolio-index
     
     .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
@@ -18,15 +18,11 @@ block content
       //- each project in {data}
       each project in projects
         .cell
-          a(href= project.id)
+          a(href= `projects/${project.id}`)
             img.thumbnail(src=`${project.image_urls[0]}`)
             h5= project.project_name
       //- Use a combination of interpolation and template literals as needed to dynamically generate the the routes in the href, as well as the img's src and the projects title.
-        
       //- Here's what the Pug for each project example should look like. 
 
-      .cell
-        a(href='#')
-          img.thumbnail(src=`${projectImg}`)
-          h5= projectTitle
+      
       
