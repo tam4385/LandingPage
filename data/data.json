@@ -8,8 +8,8 @@
         {"id": 0, "project_name": "Random Quote Generator", 
             "description": "Generate random quotes at the click of a button",
             "technologies": ["HTML", "CSS", "JavaScript"],
-            "live_link": null,
-            "github_link": null,
+            "live_link": " https://tam4385.github.io/RandomQuotes/",
+            "github_link": "https://github.com/tam4385/RandomQuotes",
             "image_urls": ["/static/img/quotes_small.png",
                  "/static/img/quotes_large1.png", "/static/img/quotes_large1.png", null]},
 
@@ -17,8 +17,8 @@
         {"id": 1, "project_name": "List Pagination",
             "description": "Paginates a list of profiles into seperate pages",
             "technologies": ["HTML", "CSS", "JavaScript"],
-            "live_link": null,
-            "github_link":null,
+            "live_link": " https://tam4385.github.io/ListPagination/",
+            "github_link": "https://github.com/tam4385/ListPagination",
             "image_urls": ["/static/img/list_small.png", "/static/img/list_large1.png"
                 , "/static/img/list_large2.png", null]},
         
@@ -26,8 +26,8 @@
         {"id": 2, "project_name": "Form Validation",
             "description": "Fictional conference form to demonstrate form validation",
             "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
-            "live_link": null,
-            "github_link":null,
+            "live_link": "https://tam4385.github.io/FormValidation/",
+            "github_link": "https://github.com/tam4385/FormValidation",
             "image_urls": ["/static/img/form_small.png", "/static/img/form_large1.png",
                 "/static/img/form_large2.png", null, null]},
         
@@ -35,8 +35,8 @@
         {"id": 3, "project_name": "Phrase Hunter",
             "description": "Can you complete the phrase without losing all your lives?",
             "technologies": ["HTML", "CSS", "JavaScript", "OOP JS"],
-            "live_link": null,
-            "github_link":null,
+            "live_link": "https://tam4385.github.io/PhraseHunter/",
+            "github_link": "https://github.com/tam4385/PhraseHunter",
             "image_urls": ["/static/img/phrase_small.png", "/static/img/phrase_large1.png",
                  "/static/img/phrase_large2.png", null]},
         
@@ -44,8 +44,8 @@
         {"id": 4, "project_name": "Employee Directory",
             "description": "Fictional employee directory that generates random employees from a 3rd party API",
             "technologies": ["HTML", "CSS", "JavaScript", "AJAX"],
-            "live_link": null,
-            "github_link":null,
+            "live_link": " https://tam4385.github.io/Treehouse-Project-5-Employee-Directory/",
+            "github_link": "https://github.com/tam4385/Treehouse-Project-5-Employee-Directory",
             "image_urls": ["/static/img/start_small.png", "/static/img/start_large1.png",
                 "/static/img/start_large2.png"]}
     ]

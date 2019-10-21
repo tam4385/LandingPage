@@ -1,56 +1,61 @@
+
+//requiring the neccessary external packages
 const express = require('express');
 const path = require('path');
+const colors = require('colors');
 
-
+//adding the project data to the app
 const data = require('./data/data.json').data;
 const projectData = data.projects
 
-
+//app route
 const app = express();
 
+//listening port
 app.listen(3000);
 
+//view engine set to pug
 app.set('view engine', 'pug')
 
+//setting up static routes to access public directory
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
+//home route
 app.get('/', (req, res) => {
-    res.locals.projects = projectData;
-    //console.log(res.locals.projects)  
+    res.locals.projects = projectData;  
     res.render('index', {projects: res.locals.projects
     }
     );
-    console.log('App is up and running.')
+    console.log('App is up and running on port 3000.'.green)
 });
 
+//about page route
 app.get('/about', (req, res) => {
     res.render('about');
 });
 
+//setting up project pages
 app.get('/projects/:id', (req, res) => {
+    //capture route params in query variable
     const query = req.params.id
     res.locals.project = projectData[query]
-    res.locals.title = projectData[query].project_name
-    res.locals.description = projectData[query].description
-    res.locals.technologies = projectData[query].technologies
-    res.locals.image1 = projectData[query].image_urls[1]
-    res.locals.image2 = projectData[query].image_urls[2]
-    console.log(res.locals.image1)
     res.render('project')
 });
 
-
+//adding static style sheets
 app.use('/static/css', express.static('public'))
 
+// error middleware to capture 404 and 500 errors
 app.use((req, res, next) => {
     const err = new Error('Oppsie Daisy. Page not found.')
     err.status = 404;
-    next(err)
+    console.log(`An error has occured: ${err.status}`.red)
+    next()
 });
 
 app.use((err, req, res, next) => {
-    // const err = new Error('Oops, somthing is not quite right here.')
     res.locals.error = err
+    console.log(`An error has occured: ${err.status}`.red);
     res.render('error') 
     next(err);
 });
