@@ -47,16 +47,15 @@ app.use('/static/css', express.static('public'))
 
 // error middleware to capture 404 and 500 errors
 app.use((req, res, next) => {
-    const err = new Error('Oppsie Daisy. Page not found.')
+    const err = new Error('Oppsie Daisy. Page not found.');
+    res.locals.error = err
     err.status = 404;
-    console.log(`An error has occured: ${err.status}`.red)
-    next()
+    res.render('error')
 });
 
 app.use((err, req, res, next) => {
     res.locals.error = err
     console.log(`An error has occured: ${err.status}`.red);
     res.render('error') 
-    next(err);
 });
 
